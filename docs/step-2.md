@@ -15,8 +15,8 @@ Step 2， 编写K8S配置文件，部署应用程序到集群
 
     > 向 K8S 部署应用程序时，需要指定其容器镜像以，因此需要先构建镜像。
 
-    执行以下脚本创建本地镜像 `book-service:latest` ，并加载到 kind 集群中.
-
+    执行以下脚本创建本地镜像 `book-service:latest` (需要java17+)，并加载到 kind 集群中.
+    
     ```bash
     $ cd ./apps/book-service
     $ ./scripts/local-build.sh
